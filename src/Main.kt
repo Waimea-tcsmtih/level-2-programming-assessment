@@ -40,28 +40,20 @@ fun main() {
 }
 
 
-    fun getStrings(prompt: String)  {
-        var answerStart : String
+    fun getStrings(prompt: String) {
+        val answerStart: String
 
 
-        if answer = ""{
-            println("Yes, Lets Continue!")
-        }
-
-        else if (prompt == "No") {
-            println("Ok")
-
-        }
-        }
+        if (answerStart.equals("Yes", ignoreCase = true)) println("Yes, Lets Start!") else println("Ok, GET OUT")
+    }
 
     fun getString(prompt: String): String {
-        var userInput: String
+        var answerStart: String
     while (true) {
+        println("Enter (Yes/No) to play")
+        answerStart = readLine().trim()
         print(prompt)
-        userInput = readln()
-        if (userInput.isNotBlank())
-            break
-
-    }
-    return userInput
-}
+        if (answerStart.isNotBlank())
+            return answerStart
+    } else {
+            println("This Input CANNOT be empty, please try again.")}
