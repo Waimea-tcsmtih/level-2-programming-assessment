@@ -12,13 +12,24 @@
  * Make the coins, and assign them different values (Silver coin - silverCoin1) as there will be multiple coins.
  * =====================================================================
  */
-
+const val gameLength = 15
+const val EMPTY = ""
 
 
 fun main() {
     println("")
     println("---------------------------------------------")
-    println("Counter Coin")
+    println("                             __                   \n" +
+            "                            /\\ \\__                \n" +
+            "  ___    ___   __  __    ___\\ \\ ,_\\    __   _ __  \n" +
+            " /'___\\ / __`\\/\\ \\/\\ \\ /' _ `\\ \\ \\/  /'__`\\/\\`'__\\\n" +
+            "/\\ \\__//\\ \\L\\ \\ \\ \\_\\ \\/\\ \\/\\ \\ \\ \\_/\\  __/\\ \\ \\/ \n" +
+            "\\ \\____\\ \\______ \\____/\\ \\_\\ \\_\\ \\__\\ \\____\\\\ \\_\\ \n" +
+            " \\_____/\\____/\\_\\/______\\/_/\\/_/\\/__/\\/____/ \\/_/ \n" +
+            " /'___\\ / __`\\/\\ \\ /' _ `\\                        \n" +
+            "/\\ \\__//\\ \\L\\ \\ \\ \\/\\ \\/\\ \\                       \n" +
+            "\\ \\____\\ \\____/\\ \\_\\ \\_\\ \\_\\                      \n" +
+            " \\/____/\\/___/  \\/_/\\/_/\\/_/                      ")
     println("---------------------------------------------")
     println("")
     println("Game Origins: Steve Copley" + " " + "&" + " " + "Digital Remake: Taine Smith")
@@ -32,28 +43,58 @@ fun main() {
 
     println("Player 1 = $playerName")
     println("Player 2 = $playerNameTwo")
+    println("")
+    println("Ok here are the rules")
+    println("")
+    println("This grid will be your playing field.")
+    println("                                                                                                    ]      [ ")
+    println("+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+]      [+")
+    println("|  @     |    o   |        |    o   |        |    o   |        |    o   |      o |        |        |        |")
+    println("+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+")
+    println("")
+    println("@ = Gold Coin & o = Silver coin")
+    println("Your goal is to collect the gold coin. You do this by moving it one space to the right of the board.")
+    println("Till it eventually reaches the final section of the board, where then a player may take that coin off the grid.")
+    println("The Gold Coin = @ will ALWAYS start on the far left, as the sliver Coins are scattered cross the board.")
+    println("Taking Sliver coins = o, Will remove the coin from the game.")
+    println("The Gold Coin = @, CANNOT jump Silver Coins = o, And Silver Coins = o CANNOT jump other Silver Coins = o.")
+    println("Each player gets one move (which includes taking the coin off the grid). Once this turn is done, its the other players turn.")
+    println("And the game ends once the Gold Coin = @ is collected.")
 
-    println("Would You Like To Play?")
-    val answerStart = getStrings ("")
+    setUpGame()
+    displayGame()
 
+}
+
+fun setUpGame(){
+    val gameBoard = mutableListOf<String>()
+    gameBoard.add(EMPTY)
+}
+
+fun displayGame() {
+
+    val banner = ("+--------".repeat(gameLength) + "+")
+
+    println(banner)
+
+    for (i in 0..<gameLength) {
+        print("| " .padEnd(10))
+    }
+    println("|")
+
+    println(banner)
 
 }
 
 
-    fun getStrings(prompt: String) {
-        val answerStart: String
-
-
-        if (answerStart.equals("Yes", ignoreCase = true)) println("Yes, Lets Start!") else println("Ok, GET OUT")
-    }
-
-    fun getString(prompt: String): String {
-        var answerStart: String
+fun getString(prompt: String): String {
+    var userInput: String
     while (true) {
-        println("Enter (Yes/No) to play")
-        answerStart = readLine().trim()
         print(prompt)
-        if (answerStart.isNotBlank())
-            return answerStart
-    } else {
-            println("This Input CANNOT be empty, please try again.")}
+        userInput = readln()
+        if (userInput.isNotBlank())
+            break
+
+    }
+    return userInput
+}
