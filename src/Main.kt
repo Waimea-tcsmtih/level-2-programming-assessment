@@ -21,7 +21,7 @@ fun main() {
     println("---------------------------------------------")
     println("                             __                   \n" +
             "                            /\\ \\__                \n" +
-            "  ___    ___   __  __    ___\\ \\ ,_\\    __   _ __  \n" +
+            "  ___    ___   __  __    ___\\ \\ ,_\\    __   _ __  ©\n" +
             " /'___\\ / __`\\/\\ \\/\\ \\ /' _ `\\ \\ \\/  /'__`\\/\\`'__\\\n" +
             "/\\ \\__//\\ \\L\\ \\ \\ \\_\\ \\/\\ \\/\\ \\ \\ \\_/\\  __/\\ \\ \\/ \n" +
             "\\ \\____\\ \\______ \\____/\\ \\_\\ \\_\\ \\__\\ \\____\\\\ \\_\\ \n" +
@@ -52,14 +52,28 @@ fun main() {
     println("|  @     |    o   |        |    o   |        |    o   |        |    o   |      o |        |        |        |")
     println("+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+")
     println("")
+    println ("Next? - Type any key to proceed")
+    val answerToInstructions = readLine() ?: ""
+    if (answerToInstructions.isNotEmpty())
+    println("")
     println("@ = Gold Coin & o = Silver coin")
     println("Your goal is to collect the gold coin. You do this by moving it one space to the right of the board.")
     println("Till it eventually reaches the final section of the board, where then a player may take that coin off the grid.")
     println("The Gold Coin = @ will ALWAYS start on the far left, as the sliver Coins are scattered cross the board.")
     println("Taking Sliver coins = o, Will remove the coin from the game.")
+    println ("Next? - Type any key to proceed")
+    println("")
+    val answerToInstructionsTwo = readLine() ?: ""
+    if (answerToInstructionsTwo.isNotEmpty())
+    println("")
     println("The Gold Coin = @, CANNOT jump Silver Coins = o, And Silver Coins = o CANNOT jump other Silver Coins = o.")
     println("Each player gets one move (which includes taking the coin off the grid). Once this turn is done, its the other players turn.")
     println("And the game ends once the Gold Coin = @ is collected.")
+
+    println ("Ready To Play? - Type any key to proceed")
+
+    val readyToPlay = readLine() ?: ""
+    if (readyToPlay.isNotEmpty())
 
     setUpGame()
     displayGame()
