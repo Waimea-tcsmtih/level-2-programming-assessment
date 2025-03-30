@@ -92,13 +92,14 @@ fun displayGame() {
     println(banner)
 
     for (i in 0..<gameLength) {
-        print("| " .padEnd(10))
+        print("|" .padEnd(10))
     }
     println("|")
 
     println(banner)
 
 }
+
 
 
 fun getString(prompt: String): String {
