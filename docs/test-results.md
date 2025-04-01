@@ -4,7 +4,7 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ---
 
-## Example Test Name
+## Testing the naming system
 
 Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
 
@@ -14,9 +14,9 @@ Details of test data. Details of test data. Details of test data. Details of tes
 
 ### Test Result
 
-![example.png](screenshots/example.png)
+![setup.gif](screenshots/setup.gif)
 
-Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
+It worked as intended, it asked for the users player 1 name, the user inputs it, then it ask's for the player 2 username, and the user inputs it.
 
 ---
 

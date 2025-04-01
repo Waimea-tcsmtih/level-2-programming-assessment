@@ -52,7 +52,7 @@ fun main() {
     println("|  @     |    o   |        |    o   |        |    o   |        |    o   |      o |        |        |        |")
     println("+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+")
     println("")
-    println ("Next? - Type any key to proceed")
+    println ("Next? - Type the 'Enter' key to proceed")
     val answerToInstructions = readLine() ?: ""
     if (answerToInstructions.isNotEmpty())
     println("")
@@ -61,7 +61,7 @@ fun main() {
     println("Till it eventually reaches the final section of the board, where then a player may take that coin off the grid.")
     println("The Gold Coin = @ will ALWAYS start on the far left, as the sliver Coins are scattered cross the board.")
     println("Taking Sliver coins = o, Will remove the coin from the game.")
-    println ("Next? - Type any key to proceed")
+    println ("Next? - Type the 'Enter' key to proceed")
     println("")
     val answerToInstructionsTwo = readLine() ?: ""
     if (answerToInstructionsTwo.isNotEmpty())
@@ -70,9 +70,9 @@ fun main() {
     println("Each player gets one move (which includes taking the coin off the grid). Once this turn is done, its the other players turn.")
     println("And the game ends once the Gold Coin = @ is collected.")
 
-    println ("Ready To Play? - Type any key to proceed")
+    println ("Ready To Play? - Type the 'Enter' key to proceed")
 
-    val readyToPlay = readLine() ?: ""
+    val readyToPlay = readLine() ?: "Proceeding"
     if (readyToPlay.isNotEmpty())
 
     setUpGame()

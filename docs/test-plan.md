@@ -10,9 +10,9 @@ Terminology:
 
 ---
 
-## Example Test Name
+## Testing the naming system
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+In the setup, you are required to pick a name for player 1 & for player 2
 
 ### Test Data To Use
 
