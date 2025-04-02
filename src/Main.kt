@@ -19,17 +19,19 @@ const val EMPTY = ""
 fun main() {
     println("")
     println("---------------------------------------------")
-    println("                             __                   \n" +
-            "                            /\\ \\__                \n" +
-            "  ___    ___   __  __    ___\\ \\ ,_\\    __   _ __  ©\n" +
-            " /'___\\ / __`\\/\\ \\/\\ \\ /' _ `\\ \\ \\/  /'__`\\/\\`'__\\\n" +
-            "/\\ \\__//\\ \\L\\ \\ \\ \\_\\ \\/\\ \\/\\ \\ \\ \\_/\\  __/\\ \\ \\/ \n" +
-            "\\ \\____\\ \\______ \\____/\\ \\_\\ \\_\\ \\__\\ \\____\\\\ \\_\\ \n" +
-            " \\_____/\\____/\\_\\/______\\/_/\\/_/\\/__/\\/____/ \\/_/ \n" +
-            " /'___\\ / __`\\/\\ \\ /' _ `\\                        \n" +
-            "/\\ \\__//\\ \\L\\ \\ \\ \\/\\ \\/\\ \\                       \n" +
-            "\\ \\____\\ \\____/\\ \\_\\ \\_\\ \\_\\                      \n" +
-            " \\/____/\\/___/  \\/_/\\/_/\\/_/                      ")
+    println(
+        "                             __                   \n" +
+                "                            /\\ \\__                \n" +
+                "  ___    ___   __  __    ___\\ \\ ,_\\    __   _ __  ©\n" +
+                " /'___\\ / __`\\/\\ \\/\\ \\ /' _ `\\ \\ \\/  /'__`\\/\\`'__\\\n" +
+                "/\\ \\__//\\ \\L\\ \\ \\ \\_\\ \\/\\ \\/\\ \\ \\ \\_/\\  __/\\ \\ \\/ \n" +
+                "\\ \\____\\ \\______ \\____/\\ \\_\\ \\_\\ \\__\\ \\____\\\\ \\_\\ \n" +
+                " \\_____/\\____/\\_\\/______\\/_/\\/_/\\/__/\\/____/ \\/_/ \n" +
+                " /'___\\ / __`\\/\\ \\ /' _ `\\                        \n" +
+                "/\\ \\__//\\ \\L\\ \\ \\ \\/\\ \\/\\ \\                       \n" +
+                "\\ \\____\\ \\____/\\ \\_\\ \\_\\ \\_\\                      \n" +
+                " \\/____/\\/___/  \\/_/\\/_/\\/_/                      "
+    )
     println("---------------------------------------------")
     println("")
     println("Game Origins: Steve Copley" + " " + "&" + " " + "Digital Remake: Taine Smith")
@@ -52,56 +54,47 @@ fun main() {
     println("|  @     |    o   |        |    o   |        |    o   |        |    o   |      o |        |        |        |")
     println("+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+")
     println("")
-    println ("Next? - Type the 'Enter' key to proceed")
+    println("Next? - Type the 'Enter' key to proceed")
     val answerToInstructions = readLine() ?: ""
     if (answerToInstructions.isNotEmpty())
-    println("")
+        println("")
     println("@ = Gold Coin & o = Silver coin")
     println("Your goal is to collect the gold coin. You do this by moving it one space to the right of the board.")
     println("Till it eventually reaches the final section of the board, where then a player may take that coin off the grid.")
     println("The Gold Coin = @ will ALWAYS start on the far left, as the sliver Coins are scattered cross the board.")
     println("Taking Sliver coins = o, Will remove the coin from the game.")
-    println ("Next? - Type the 'Enter' key to proceed")
+    println("Next? - Type the 'Enter' key to proceed")
     println("")
     val answerToInstructionsTwo = readLine() ?: ""
     if (answerToInstructionsTwo.isNotEmpty())
-    println("")
+        println("")
     println("The Gold Coin = @, CANNOT jump Silver Coins = o, And Silver Coins = o CANNOT jump other Silver Coins = o.")
     println("Each player gets one move (which includes taking the coin off the grid). Once this turn is done, its the other players turn.")
     println("And the game ends once the Gold Coin = @ is collected.")
 
-    println ("Ready To Play? - Type the 'Enter' key to proceed")
+    println("Ready To Play? - Type the 'Enter' key to proceed")
 
     val readyToPlay = readLine() ?: "Proceeding"
     if (readyToPlay.isNotEmpty())
 
-    setUpGame()
-    displayGame()
 
-}
+    val board = mutableListOf<String>("GC", "", "", "SC", "", "SC", "", "", "SC", "", "SC", "", "", "SC", "", "|")
+    val gameOver = false
+    var playerPlaying = 1
 
-fun setUpGame(){
-    val gameBoard = mutableListOf<String>()
-    gameBoard.add(EMPTY)
-}
+    while (!gameOver){
+        print(board)
+        println("$playerName's Turn")
+        println("Press (1) to move the 'GC', press (2) to move the 'SC' ")
+        val choice = readLine()?.toIntOrNull()
+        when (choice) {
+        1 -> {
+        val gold = board.indexOf("GC")
+        }
 
-fun displayGame() {
-
-    val banner = ("+--------".repeat(gameLength) + "+")
-
-    println(banner)
-
-    for (i in 0..<gameLength) {
-        print("|" .padEnd(10))
+        }
     }
-    println("|")
-
-    println(banner)
-
 }
-
-
-
 fun getString(prompt: String): String {
     var userInput: String
     while (true) {
@@ -113,3 +106,4 @@ fun getString(prompt: String): String {
     }
     return userInput
 }
+
