@@ -13,6 +13,11 @@
  * =====================================================================
  */
 const val gameLength = 15
+
+const val GOLD = "GC"
+
+const val SILVER = "SC"
+
 const val EMPTY = ""
 
 
@@ -75,26 +80,43 @@ fun main() {
     println("Ready To Play? - Type the 'Enter' key to proceed")
 
     val readyToPlay = readLine() ?: "Proceeding"
-    if (readyToPlay.isNotEmpty())
+    if (readyToPlay.isNotEmpty()) {
+        "Error"
+    }
+    val board = MutableList(gameLength + 1) { EMPTY }
+
+    board[0] = GOLD
+
+    board[3] = SILVER
+
+    board[5] = SILVER
+
+    board[8] = SILVER
+
+    board[10] = SILVER
+
+    board[13] = SILVER
 
 
-    val board = mutableListOf<String>("GC", "", "", "SC", "", "SC", "", "", "SC", "", "SC", "", "", "SC", "", "|")
+
+
     val gameOver = false
-    var playerPlaying = 1
+    val playerPlaying = 1
 
     while (!gameOver){
         print(board)
-        println("$playerName's Turn")
-        println("Press (1) to move the 'GC', press (2) to move the 'SC' ")
-        val choice = readLine()?.toIntOrNull()
-        when (choice) {
-        1 -> {
-        val gold = board.indexOf("GC")
-        }
 
-        }
+
+        val playerName = if (playerPlaying == 1) playerName else playerNameTwo
+
+        println("It's \n$playerName's Turn")
+
+        val playerChoice = readLine()?.toIntOrNull()
+        println("Press (1) to move the 'GC', press (2) to move the 'SC' ")
+        when (playerChoice)
     }
 }
+
 fun getString(prompt: String): String {
     var userInput: String
     while (true) {
