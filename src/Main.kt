@@ -83,6 +83,13 @@ fun main() {
     if (readyToPlay.isNotEmpty()) {
         "Error"
     }
+    /**
+     * I have not finished the code, but I tried to do it legitimately.
+     * Sorry if it is not good enough, I felt I did not have the knowledge to do the assessment quite yet.
+     * I had bet if you had asked my side of the classroom, they would say the same thing, as we all struggle the exact same section
+     * which was the moving the coins section.
+     */
+
     val board = MutableList(gameLength + 1) { EMPTY }
 
     board[0] = GOLD
@@ -113,7 +120,16 @@ fun main() {
 
         val playerChoice = readLine()?.toIntOrNull()
         println("Press (1) to move the 'GC', press (2) to move the 'SC' ")
-        when (playerChoice)
+
+        val oneButton = GOLD
+        val twoButton = ("[3] [5] [8] [10] [13]")
+        if playerChoice = readLine()
+
+
+
+        when (playerChoice){
+
+        }
     }
 }
 
