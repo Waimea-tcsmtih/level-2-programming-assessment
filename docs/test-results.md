@@ -6,11 +6,11 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ## Testing the naming system
 
-Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
+
 
 ### Test Data Used
 
-Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data.
+By running my code, it will test it.
 
 ### Test Result
 
@@ -20,7 +20,7 @@ It worked as intended, it asked for the users player 1 name, the user inputs it,
 
 ---
 
-## Example Test Name
+## Winning
 
 Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
 
@@ -30,8 +30,7 @@ Details of test data. Details of test data. Details of test data. Details of tes
 
 ### Test Result
 
-![example.png](screenshots/example.png)
-
+!
 Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
 
 ---

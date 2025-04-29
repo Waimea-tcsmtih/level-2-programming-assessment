@@ -9,13 +9,13 @@ This checklist can be used to gauge progress towards different levels of success
 ### Program Functionality
 
 The game functions correctly and meets the specification:
-- [ ] The game is **playable**
+- [x] The game is **playable**
 - [x] The **instructions** for the game are available in-game
 - [x] **Two players** can play
 - [x] Player **names** are used to identify each player
-- [ ] Players **take turns** to play
-- [ ] Players provides **input data** to the game (e.g. moves to make)
-- [ ] The **current status** of the game is shown after each play
+- [x] Players **take turns** to play
+- [x] Players provides **input data** to the game (e.g. moves to make)
+- [x] The **current status** of the game is shown after each play
 - [ ] A **winner is detected** correctly
 
 ### Program Code
