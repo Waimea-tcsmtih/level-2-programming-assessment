@@ -16,26 +16,25 @@ In the setup, you are required to pick a name for player 1 & for player 2
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+By running the code
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
+ ![Animation.3.gif](screenshots/Animation.3.gif)
 
 ---
 
-## Example Test Name
+## Testing the silver coins moving
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+By running the code
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
 
----
+![Animation.4.gif](screenshots/Animation.4.gif)
 
 

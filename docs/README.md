@@ -1,6 +1,6 @@
-# PROJECT NAME HERE
+# Counter Coin
 
-by YOUR NAME HERE
+by Taine Smith
 
 ---
 

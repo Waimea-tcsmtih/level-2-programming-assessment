@@ -20,18 +20,18 @@ It worked as intended, it asked for the users player 1 name, the user inputs it,
 
 ---
 
-## Winning
+## Moving a silver and gold coin
 
 Example test description. Example test description.Example test description. Example test description.Example test description. Example test description.
 
 ### Test Data Used
 
-Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data. Details of test data.
+By playing the code, i'll test it
 
 ### Test Result
 
-!
-Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
+![Animation.2.5.gif](screenshots/Animation.2.5.gif)
+
 
 ---
 

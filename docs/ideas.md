@@ -64,8 +64,8 @@ The coins are **placed randomly** onto the grid...
 The rules are:
 - Players take turns
 - A turn can be either:
-  - Removing a coin from the left square (if there is one), or
-  - Sliding any coin left
+  - Removing a coin by moving it to the far right square
+  - Sliding any coin right
 - Coins can slide any number of empty squares
 - Coins cannot jump on or over another coin
 
@@ -75,11 +75,11 @@ Play begins... Taking turns, each player can do one of the following:
 - **Slide** any coin a number of spaces to the **left**, as long as:
   - Other coins are **not jumped** 
   - It does **not share the same square** as another coin
-- **Remove** a coin from the far-left square (position 1) if one is there
+- **Remove** a coin from the far-right square (position 1) if one is there
 
 So, the valid plays in our example would be...
 
-![og-valid.png](images/og-valid.png)
+![Animation.final.gif](screenshots/Animation.final.gif)
 
 (Only the coin at position 9 can't be moved, since there is no space to its left)
 
@@ -89,5 +89,5 @@ The aim is to win by being the player who **removes the gold coin** from the lef
 
 This is an example game play-through showing the moves made by each player, and the final winner...
 
-![og-anim.gif](images/og-anim.gif)
+![Animation.final.gif](screenshots/Animation.final.gif)
 

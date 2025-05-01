@@ -16,40 +16,40 @@ The game functions correctly and meets the specification:
 - [x] Players **take turns** to play
 - [x] Players provides **input data** to the game (e.g. moves to make)
 - [x] The **current status** of the game is shown after each play
-- [ ] A **winner is detected** correctly
+- [x] A **winner is detected** correctly
 
 ### Program Code
 
 The program stores data using:
-- [ ] **Variables** of at least two types (e.g. int, text, boolean)
+- [x] **Variables** of at least two types (e.g. int, text, boolean)
 - [x] At least one **data collection** (array / list) to store some elements of the game data
 
 The program structure:
-- [ ] Is broken up into **functions**: a main function, plus other supporting functions 
+- [x] Is broken up into **functions**: a main function, plus other supporting functions 
 - [x] Contains **sequences** of instructions
-- [ ] Uses **conditional** instructions to control the program flow
-- [ ] Uses program **branches** (if...else, when, etc.)
-- [ ] Uses **iteration** (loops) to repeat things (for, while, etc.)
+- [x] Uses **conditional** instructions to control the program flow
+- [x] Uses program **branches** (if...else, when, etc.)
+- [x] Uses **iteration** (loops) to repeat things (for, while, etc.)
 
 ### Program Documentation
 
 The program code:
 - [x] Is **indented** correctly
-- [ ] Is **laid-out clearly**
-- [ ] Contains **comments** that help in understanding how it works
+- [x] Is **laid-out clearly**
+- [x] Contains **comments** that help in understanding how it works
 
 ### Program Testing
 
 The program has been tested and there is documented evidence that:
-- [ ] The game is **fully functional**, showing testing of:
+- [x] The game is **fully functional**, showing testing of:
   - [x] game setup
-  - [ ] player moves
-  - [ ] players taking turns
-  - [ ] scoring (if any)
-  - [ ] players winning
-  - [ ] final feedback (if appropriate)
-- [ ] **Valid (expected) data** has been used to test **all data inputs**
-- [ ] Where tests have failed, **fixes** are discussed and **tests re-run**
+  - [x] player moves
+  - [x] players taking turns
+  - [?] scoring (if any)
+  - [x] players winning
+  - [x] final feedback (if appropriate)
+- [x] **Valid (expected) data** has been used to test **all data inputs**
+- [x] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
 
@@ -62,28 +62,28 @@ The program stores data using variables, where:
 - [x] Variable names **begin with lowercase**
 - [x] Naming is consistent, either **camelCase or snake_case**
 - [ ] Variables are **scoped appropriately** (global or local to a function)
-- [ ] **Global** variables are only used if **genuinely needed**
+- [x] **Global** variables are only used if **genuinely needed**
 
 The program uses functions appropriately, where:
-- [ ] At least one uses **parameters** to pass data into it
-- [ ] At least one provides a **return value** to the calling code
-- [ ] The function **names are well-chosen**, relating to their functionality 
+- [x] At least one uses **parameters** to pass data into it
+- [x] At least one provides a **return value** to the calling code
+- [x] The function **names are well-chosen**, relating to their functionality 
 
 ### Program Documentation
 
 The program code is well-commented:
 - [ ] **JavaDoc Block comments** are used at the top of each **file** and **function**
-- [ ] Comments accurately describe the **function and behaviour** of the code:
-  - [ ] Defining the **purpose** of functions / key blocks of code
-  - [ ] Explaining the **reason** (the '**why**') of key parts of the code
-  - [ ] Defining function **parameters** and/or **return values**
+- [x] Comments accurately describe the **function and behaviour** of the code:
+  - [x] Defining the **purpose** of functions / key blocks of code
+  - [x] Explaining the **reason** (the '**why**') of key parts of the code
+  - [x] Defining function **parameters** and/or **return values**
 
 ### Program Testing
 
 The program has been tested using:
-- [ ] A test plan **prepared in advance** of the coding
-- [ ] A test plan that **defines test data values** to be used
-- [ ] Test values that cover **boundary** (limit / edge) cases
+- [x] A test plan **prepared in advance** of the coding
+- [x] A test plan that **defines test data values** to be used
+- [x] Test values that cover **boundary** (limit / edge) cases
 
 ---
 

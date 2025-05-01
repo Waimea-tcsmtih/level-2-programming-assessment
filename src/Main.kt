@@ -84,7 +84,7 @@ fun main() {
     if (readyToPlay.isNotEmpty()) {
         println("")
     }
-
+    //this is my list where it counts each empty space as an exiting spot called "EMPTY" which allows the coins to move
     val coins = mutableListOf<String>()
     coins.add("SC")
     coins.add("SC")
@@ -98,7 +98,7 @@ fun main() {
     coins.add(EMPTY)
     coins.add(EMPTY)
     coins.add(EMPTY)
-
+    // this suffles the coins to make them random
     coins.shuffle()
 
 
@@ -110,7 +110,7 @@ fun main() {
 
     while (!gameOver) {
         displayBoard(coins)
-
+        //this allows the player to know who is playing at that current time
         println("It's ${if (playerPlaying == 1) playerName else playerNameTwo}'s Turn")
 
         println("Press (1) to move the 'GC', press (2) to move the 'SC' ")
@@ -134,13 +134,13 @@ fun main() {
                     } else {
                         println("Cannot move Silver Coin. Blocked!")
                     }
-                } else {
+                } else { //this is an invalid selection message, this only occurs if the code detects someone out of bounds
                     println("Invalid selection.")
                 }
             }
             else -> println("Invalid choice. Please choose 1 or 2.")
         }
-
+    // this is for the winner, to order the game to let whoever moved the gold coin to that position, to win
         if (coins.last() == GOLD) {
             gameOver = true
             println("Game Over! ${if (playerPlaying == 1) playerName else playerNameTwo} wins!")
@@ -171,14 +171,14 @@ fun moveGoldCoin(board: MutableList<String>): Boolean {
     }
     return false
 }
-
+    //this is my display board. which tells the code/coins where to stand.
 fun displayBoard(board: List<String>) {
     println("+${"-".repeat(5)}+".repeat(board.size))
     board.forEach {val coin = if (it == GOLD) "  GC   " else if (it == SILVER) "  SC   " else "      "
 
 
 
-
+// this is the board itself, its made from dashes and pluses to indicate the change in playing squares
         print("|$coin")
     }
     println("|")
